@@ -7,6 +7,7 @@ This is an in-progress migration of the existing IndieWebify.me code from Silex 
 Requirements:
 * PHP 8.2
 
+Installation
 * Set the domain's document root to the `/public` directory
 * Configure the server to route requests through `/public/index.php` if they don’t match a file
   * If you are running Apache, do this by renaming `/public/htaccess.txt` to `/public/.htaccess`
