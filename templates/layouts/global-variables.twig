@@ -1,0 +1,18 @@
+{# -- Root global variables that all templates inherit from -- #}
+{# -- This allows for defining site-wide Twig variables as needed -- #}
+{% apply spaceless %}
+
+{# -- General global variables -- #}
+{# {% set meta_description = meta_description|default('IndieWebify.Me') %} #}
+
+{% if short_title %}
+	{% set title = short_title ~ ' – IndieWebify.Me' %}
+{% elseif title is empty %}
+	{% set title = 'IndieWebify.Me – A guide to getting you on the IndieWeb' %}
+{% endif %}
+
+{% endapply %}
+{# -- Twig output from the render; this must be in a block -- #}
+{% block htmlPage %}
+{% endblock %}
+
