@@ -33,7 +33,7 @@ The `/config` directory is where all the app configuration and startup happens:
 
 The `/src` directory has the bulk of the app code. The folders and filenames in there follow [PSR-4](https://www.php-fig.org/psr/psr-4/) so they can be autoloaded. Currently these directories are `Controllers`, `Responder`, and `Service` since that was the design pattern I was following. Or, uh, hybrid design pattern? :) My point being, it's fine to use different naming schemes for the folders as long as it logically follows the design pattern you're using, and the classes within them use corresponding namespaces.
 
-The `/template` directory has the Twig templates. I followed this blog post for setting up the template file structure: https://nystudio107.com/blog/an-effective-twig-base-templating-setup
+The `/templates` directory has the Twig templates. The `/templates/pages` contains individual page templates. I followed this blog post for setting up the template file structure: https://nystudio107.com/blog/an-effective-twig-base-templating-setup
 
 ## Credits
 
